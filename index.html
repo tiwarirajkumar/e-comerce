@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeKodex-Shop Web Desing Full Website</title>
+
+  <!-- Website Icon logo-->
+  <link rel="shortcut icon" href="./images/logo.png" type="image/svg+xml">
+
+
+  <!--Icon font link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- custom checkout pay css link  -->
+  <link rel="stylesheet" type="text/css" href="https://libs.na.bambora.com/checkouttheme/0.1.0/ui.bambora/ui.bambora.1.1.0.css">
+  <link rel="stylesheet" type="text/css" href="https://libs.na.bambora.com/checkouttheme/0.1.0/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+  <!-- link css in html  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ 
+  <!--Header Section Start -->
+  <section id="header" class="header">
+    <a href="#" class="logo"><i class="fas fa-shop"></i>DeKodex-Shop</a>
+
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#category">Category</a>
+      <a href="#shop">Shop</a>
+    </nav>
+
+    <div class="icons">
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <a href="#" class="fas fa-heart"></a>
+      <a href="cartadd.html" class="fas fa-shopping-cart"></a>
+    </div>
+  </section>
+  <!-- header section ends  -->
+
+  <!-- Home section starts -->
+  <section class="home" id="home">
+    <!-- 1-->
+    <div class="slide active"
+      style="background: url(./images/herobg.jpg) no-repeat; background-size: cover; background-position: center;">
+      <div class="content">
+        <span>Pick the perfect pair</span>
+        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod recusandae repellendus</h3>
+        <a href="#" class="btn">read more</a>
+      </div>
+    </div>
+    <!-- 2-->
+    <div class="slide"
+      style="background: url(./images/herobg2.jpg) no-repeat; background-size: cover; background-position: center;">
+      <div class="content">
+        <span>Exclusive Sport Shoes</span>
+        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod recusandae </h3>
+        <a href="#" class="btn">read more</a>
+      </div>
+    </div>
+    <!-- 3-->
+    <div class="slide"
+      style="background: url(./images/herobg3.jpg) no-repeat; background-size: cover; background-position: center;">
+      <div class="content">
+        <span>Smart & Sporty</span>
+        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod recusandae </h3>
+        <a href="#" class="btn">read more</a>
+      </div>
+    </div>
+
+    <div id="next-slide" onclick="next()" class="fas fa-angle-right"></div>
+    <div id="prev-slide" onclick="prev()" class="fas fa-angle-left"></div>
+  </section>
+
+  <!-- Category section starts  -->
+  <section class="category" id="category">
+    <div class="box-container">
+      <a href="#" class="box">
+        <img src="images/product-1.jpg" alt="">
+        <h3>Product 1</h3>
+      </a>
+      <a href="#" class="box">
+        <img src="images/product-2.jpg" alt="">
+        <h3>Product 2</h3>
+      </a>
+      <a href="#" class="box">
+        <img src="images/product-3.jpg" alt="">
+        <h3>Product 3</h3>
+      </a>
+      <a href="#" class="box">
+        <img src="images/product-4.jpg" alt="">
+        <h3>Product 4</h3>
+      </a>
+      <a href="#" class="box">
+        <img src="images/product-5.jpg" alt="">
+        <h3>Product 5</h3>
+      </a>
+      <a href="#" class="box">
+        <img src="images/product-6.jpg" alt="">
+        <h3>Product 6</h3>
+      </a>
+    </div>
+  </section>
+
+  <!-- pramotion starts  -->
+  <section class="pramotion" id="pramotion">
+    <div class="box-container">
+      <div class="collection-card" style="background-image:url(./images/collection-1.jpg)">
+        <h1 class="sport">Sport Collection</h1>
+        <a href="#" class="btn">Explore More<i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="collection-card" style="background-image:url(./images/collection-2.jpg)">
+        <h1 class="sport">Sport Collection</h1>
+        <a href="#" class="btn">Explore More<i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="collection-card" style="background-image:url(./images/collection-3.jpg)">
+        <h1 class="sport">Sport Collection</h1>
+        <a href="#" class="btn">Explore More<i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- shop section starts  -->
+
+  <section class="shop" id="shop">
+    <h1 class="heading">Our <span>Shop</span></h1>
+    <div class="box-container">
+      <div class="box">
+        <div class="img">
+          <img src="images/1.jpg" alt="">
+          <div class="icons">
+            <a href="#" class="fas fa-eye"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+          </div>
+        </div>
+        <div class="content">
+          <h3>NIKE ATR</h3>
+          <div class="price">$40<span> $150.99</span></div>
+          <a  class="btn" onclick="addToCart(1)">Add to Cart</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="img">
+          <img src="images/2.jpg" alt="">
+          <div class="icons">
+            <a href="#" class="fas fa-eye"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+          </div>
+        </div>
+        <div class="content">
+          <h3>CAMPUS</h3>
+          <div class="price">$50<span> $200.99</span></div>
+          <a  class="btn" onclick="addToCart(2)">Add to Cart</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="img">
+          <img src="images/3.jpg" alt="">
+          <div class="icons">
+            <a href="#" class="fas fa-eye"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+          </div>
+        </div>
+        <div class="content">
+          <h3>SPARAX</h3>
+          <div class="price">$60<span> $220.99</span></div>
+          <a  class="btn" onclick="addToCart(3)">Add to Cart</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="img">
+          <img src="images/4.jpg" alt="">
+          <div class="icons">
+            <a href="#" class="fas fa-eye"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+          </div>
+        </div>
+        <div class="content">
+          <h3>ADIDAS </h3>
+          <div class="price">$70<span> $230.99</span></div>
+          <a  class="btn" onclick="addToCart(4)">Add to Cart</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="img">
+          <img src="images/product-1.jpg" alt="">
+          <div class="icons">
+            <a href="#" class="fas fa-eye"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+          </div>
+        </div>
+        <div class="content">
+          <h3>REEBOOK</h3>
+          <div class="price">$80<span> $110.99</span></div>
+          <a  class="btn" onclick="addToCart(5)">Add to Cart</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="img">
+          <img src="images/product-2.jpg" alt="">
+          <div class="icons">
+            <a href="#" class="fas fa-eye"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+          </div>
+        </div>
+        <div class="content">
+          <h3>PUMA</h3>
+          <div class="price">$30<span> $90.99</span></div>
+          <a  class="btn" onclick="addToCart(6)">Add to Cart</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="img">
+          <img src="images/product-3.jpg" alt="">
+          <div class="icons">
+            <a href="#" class="fas fa-eye"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+          </div>
+        </div>
+        <div class="content">
+          <h3>BATA</h3>
+          <div class="price">$90<span> $300.99</span></div>
+          <a  class="btn" onclick="addToCart(7)">Add to Cart</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="img">
+          <img src="images/product-4.jpg" alt="">
+          <div class="icons">
+            <a href="#" class="fas fa-eye"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+          </div>
+        </div>
+        <div class="content">
+          <h3>WOODLAND</h3>
+          <div class="price">$100<span> $350.99</span></div>
+          <a  class="btn" onclick="addToCart(8)">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- pramotion starts  -->
+    <section class="pramotion" id="pramotion">
+      <h2 class="heading">Shopping <span>Cart</span></h2>
+      
+      <div class="box-container" id="cart-items">
+        
+      </div>
+
+      <div class="payment">
+        <strong><a  class="btn" id="total-price">Total</a></strong>
+        <a  class="btn" id="divVCButton" onclick="set_price()">Make Payment</a>
+      </div>
+    </section>
+  
+
+  <!-- Services section starts-->
+  <section class="section-services">
+    <div class="container">
+      <ul class="service-list">
+
+        <li class="services-item">
+          <div class="service-card">
+
+            <div class="card-icon">
+              <img src="./images/service-1.png" alt="Service icon" width="53" height="28" loading="lazy">
+
+            </div>
+
+            <div>
+              <h3 class="h4 card-title">Free Shipping</h3>
+              <p class="card-text">All orders over <span>$150</span></p>
+            </div>
+
+          </div>
+        </li>
+        <li class="services-item">
+          <div class="service-card">
+
+            <div class="card-icon">
+              <img src="./images/service-2.png" alt="Service icon" width="53" height="28" loading="lazy">
+
+            </div>
+
+            <div>
+              <h3 class="h4 card-title">Quick Payment</h3>
+              <p class="card-text">100% secure payment</p>
+            </div>
+
+          </div>
+        </li>
+        <li class="services-item">
+          <div class="service-card">
+
+            <div class="card-icon">
+              <img src="./images/service-3.png" alt="Service icon" width="53" height="28" loading="lazy">
+
+            </div>
+
+            <div>
+              <h3 class="h4 card-title">Free Returns</h3>
+              <p class="card-text">Money back in working 7 days</p>
+            </div>
+
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </section>
+
+
+
+  
+
+  <!--Post section starts-->
+  <section class="section insta-post">
+    <ul class="insta-post-list has-scrollbar">
+
+      <li class="insta-post-item">
+        <img src="./images/insta-1.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100"
+          loading="lazy">
+        <a href="#" class="insta-post-link">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </li>
+      <li class="insta-post-item">
+        <img src="./images/insta-2.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100"
+          loading="lazy">
+        <a href="#" class="insta-post-link">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </li>
+      <li class="insta-post-item">
+        <img src="./images/insta-3.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100"
+          loading="lazy">
+        <a href="#" class="insta-post-link">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </li>
+      <li class="insta-post-item">
+        <img src="./images/insta-4.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100"
+          loading="lazy">
+        <a href="#" class="insta-post-link">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </li>
+      <li class="insta-post-item">
+        <img src="./images/insta-5.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100"
+          loading="lazy">
+        <a href="#" class="insta-post-link">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </li>
+      <li class="insta-post-item">
+        <img src="./images/insta-6.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100"
+          loading="lazy">
+        <a href="#" class="insta-post-link">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </li>
+      <li class="insta-post-item">
+        <img src="./images/insta-7.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100"
+          loading="lazy">
+        <a href="#" class="insta-post-link">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </li>
+      <li class="insta-post-item">
+        <img src="./images/insta-8.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100"
+          loading="lazy">
+        <a href="#" class="insta-post-link">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </li>
+
+    </ul>
+
+  </section>
+
+
+  <!--Footer section starts-->
+
+  <section class="footer" id="contact">
+    <div class="logo">
+      <a href="#home">
+        <img src="./images/weblogo.png" alt="logo" width="220" height="70">
+      </a>
+    </div>
+    <div class="box-container">
+
+      <div class="box">
+        <h3>Quick Links</h3>
+        <a href="#home" class="link"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="#about" class="link"><i class="fas fa-angle-right"></i>about</a>
+        <a href="#shop" class="link"><i class="fas fa-angle-right"></i>shop</a>
+        <a href="#category" class="link"><i class="fas fa-angle-right"></i>category</a>
+      </div>
+
+      <div class="box">
+        <h3>My Favorite</h3>
+        <a href="#" class="link"><i class="fas fa-angle-right"></i>My Favorite</a>
+        <a href="#" class="link"><i class="fas fa-angle-right"></i>My orders</a>
+        <a href="#" class="link"><i class="fas fa-angle-right"></i>My Wishlists</a>
+        <a href="#" class="link"><i class="fas fa-angle-right"></i>privacy policy</a>
+
+      </div>
+
+      <div class="box">
+        <h3>Contact Details</h3>
+        <a href="#" class="link"><i class="fas fa-phone"></i>+111-222-333</a>
+        <a href="#" class="link"><i class="fas fa-phone"></i>+111-222-333</a>
+        <a href="#" class="link"><i class="fas fa-envelope"></i>rktiwari.rk1999@gmail.com</a>
+        <a href="#" class="link"><i class="fas fa-map"></i>mumbai,India - 401204</a>
+        <div class="share">
+          <a href="" class="fab fa-facebook-f"></a>
+          <a href="" class="fab fa-twitter"></a>
+          <a href="" class="fab fa-instagram"></a>
+
+        </div>
+      </div>
+
+      <div class="box">
+        <h3>Newsletter</h3>
+        <p>Subscribe for latest updates</p>
+        <form action="">
+          <input class="email" type="email" placeholder="Email Address">
+          <input class="btn" value="Subscribe" type="submit">
+        </form>
+      </div>
+
+    </div>
+    <div class="credit">Designed by <span>RajKumarTiwari</span>|| all rights reserved.</div>
+  </section>
+
+
+    <!-- <script>CheckoutTheme.init();</script> -->
+  <script src="index.js"></script>
+</body>
+
+</html>

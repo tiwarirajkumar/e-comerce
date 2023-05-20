@@ -1,0 +1,71 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="checkout.css">
+
+<!--Icon font link-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src='https://libs.na.bambora.com/customcheckout/1/customcheckout.js'></script>
+
+<!-- import Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+
+
+<body>
+
+
+<section>
+    <div class="container">
+        <h1 class="price">Confirm Your Payment </h1>
+        <div class="row">
+            <!-- Add form -->
+            <form id="checkout-form" class="form-inline  text-center">
+                <div class="form-group col-xs-6 has-feedback" id="card-number-bootstrap">
+                    <div id="card-number" class="form-control"></div>
+                    <label class="help-block" for="card-number" id="card-number-error"></label>
+                </div>
+                
+                <div class="form-group col-xs-2 has-feedback" id="card-cvv-bootstrap">
+                    <div id="card-cvv" class="form-control"></div>
+                    <label class="help-block" for="card-cvv" id="card-cvv-error"></label>
+                </div>
+                <div class="form-group col-xs-2 has-feedback" id="card-expiry-bootstrap">
+                    <div id="card-expiry" class="form-control"></div>
+                    <label class="help-block" for="card-expiry" id="card-expiry-error"></label>
+                </div>
+                <div class="col-xs-2 text-center">
+                    <button id="pay-button" type="submit" class="btn btn-primary disabled" disabled="true">Pay</button>
+                </div>
+            </form>
+        </div>
+ <div class="right">
+    <div class="cards">
+        <img src="img/mc.png" alt="">
+        <img src="img/vi.png" alt="">
+        <img src="img/pp.png" alt="">
+    </div>
+</div>
+</div>
+<div class="row">
+    <div class="col-lg-12 text-center">
+        <div id="feedback"></div>
+    </div>
+</div>
+</section>
+<!--Footer section starts-->
+<script src="checkout.js"></script>
+<script src="index.js"></script>
+</body>
+                
+           
+            
+               
+            
+            
+            
+          
+    
+
+
+
