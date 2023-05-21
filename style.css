@@ -223,12 +223,12 @@ span{
 }
 
 .category .box-container .box img{
-    height: 20rem;
+    height: 15rem;
     margin-bottom: 1rem;
 }
 
 .category .box-container .box img:hover{
-    transform: scale(1,2);
+    transform: scale(1,1.6);
 }
 
 /* promotion  */
@@ -588,10 +588,6 @@ span{
 
     span{
         line-height: 1;
-    }
-
-    .sport{
-        font-size: 100%;
     }
 
     .header{
